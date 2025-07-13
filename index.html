@@ -1,30 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Game design</title>
-</head>
-<body>
-<nav>
-    <p>Welcome! Be Ready For Time Travelling</p>
-    <div>
-        <p>⸸ PLAYER</p>
-        <p>⸸Quests</p>
-        <p>⸸Inventry</p>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Portfolio</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4573/4573998.png">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="">
+    <div class="h-[250vh] box-border overflow-hidden relative flex size-full min-h-screen flex-col bg-[#221112] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#472426] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">About Me</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#e82630] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">View My Work</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRTfSODTlXCgsHEun-snuTJKi02HQjte_Mb_0fvXRPkFyBd9eQkanHjCFPyyw6ZYZInDyDU-EHY1gVMt903PTQWEu9TsJ46qu0IHhdOwhzztnXkGeH6mpNcqH5wJXEA3Sj-bm_BzqdkWOnAsCe0rtZMu0muiaonJC1dWHvaDdnylg3GzOad18jXxwCAhbUXy7nc03QV8uoSAET1CySnB0sLLbEWd752X9tVgqWoiQm1wNIh094c9ygwN506zc35JbI_83DnFSQwIw");'
+                  >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                    Harish Soni
+                  </h1>
+                  <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">Web Developer</h2>
+                </div>
+                <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#e82630] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                >
+                <span class="truncate">View My Work</span>
+              </button>
+            </div>
+          </div>
+        </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm a passionate web developer with a focus on creating dynamic and responsive web applications. My expertise includes front-end development using modern frameworks
+              and libraries, as well as back-end development with various server-side technologies. I'm always eager to learn new skills and take on challenging projects.
+            </p>
+         
+            <div class="h-[110vh] backdrop-blur w-[140vw] flex justify-center items-center text-white" style="position:relative;z-index: 999;">
+                    <p class="text-5xl relative right-[450px] top-[30px]">Hire Me To See My Full Potential</p>
+          </div> 
+          <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 relative bottom-[620px]">Projects</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4 backdrop-blur">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative bottom-[620px]"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDe4O-anKahuUXOZbQZQ5Kw2Ya3on-138f0hL88if3IC6jLCDmakKGD7MarzgLXK_kw4qxz-gVfb_0fX7lk_fKkN7cun7EoFM4u8gUYo_UcdQ1BQCcl7vCWLamReD_9jE0DQqaoEQbaM_cdmiguQ68kKdbejoF1UYQhOWwzK06XZv37XzZRjS49M4q-7fmLMM8eezVhf3CZm3WZlAxDmy-KrpUnpSeCHcIsWT0XIdMxyqfcamU3gnrszRpAftomgh7-bXyBEpK1VWM");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal relative bottom-[620px]">Project 1</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="relative bottom-[620px] w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAq3GSQp3N7WQoudd3M9MoxkFmlK8P8LRtdH1e9FpGjrUocHtfviZYBMepQnAdE9E4K5VbTtAM3F_lDEMOypu1K2Izey6_L-uvIyl3tj2fDQm-3U6JAr6oVzRRgXJJ3vb-Z7mZyxOWdOdkhDC4VjF0ryTEHZ7EiGnADXOhP6cCfHWaSVTri7FHW5an3GlWNQb00uZhyr3myViZRl1ZdAuQy_WCh2YEF1ABdnnTyLuYuNvth9YhmKaZmMMIGjT3O2B-BmWTLyi4_SYw");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal relative bottom-[620px]">Project 2</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="relative bottom-[620px] w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2KIxvcXTPlOkS1Tm3bASNhc8P1MOqqQx6QnwDCWkBAmqkSNG1AcUuHzWM5VPAiWHJBREPqwW9e7yyPQbpTiXOLyRpHje6K30UD1j8spi2DOFz8dDba87k45lCAnbSQhgESPAEIGybPpnE4x1gZdon-O5UCalru9DxYU8V2iZ3sEbfX0RR0R0078tmmuDeK9zYtCKERzEAkXCsvAGZICWNMwjJOqXS95dyxDA4H1jYPQkfO4Z-w2pG56sa6inTsi7idgB9xFRU7ZI");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal relative bottom-[620px]">Project 3</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 relative bottom-[620px]">Images</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 relative bottom-[620px]">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl "
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBswWpMlyj_1YDTr55j8lF47xlP1tN5UCk4J3wNoGZ8c4-UxRTGi051eR-NGDmBQZrT3OpSkpPX6pZxPzbmJGdC9cdeCgcOBm4cbmPdhGaC0M_6WHS1ATJBCdHy40ke5uzsA8HAcqpuGA9ZZfExK33rgWiYIExU1d17Bj8g0OIzhHWdBXtoGjZzYiIciSOeOHCpOH14PZ_LFrq1NeenwvYHPdPHfRLpXX207qQNBDiScEDURGW0IN_5H0IR_LqKkKwPn5UUAmKZgtI");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative bottom-[620px]"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZ9WheHAuGHG1cCXMKANaqgbRaKwwuoIqUyuxtBQb2zvdoUw688TzDyAOgnTuBMaAvNyHq_HGupGGeC7apLUO_eJGF789jadKwv924wSfGf_hZbAdimVKgz4vAASLdPXeiLGd41vfNJbePTDxIJmC7mx9GYt-ESbmR0od1OQ-R8XF-R6Ah-yp9b3pYFh8wTOe_pXHY_uZ4Ql-gPvn4AZ5j8BrN0_s_8UI9jqfhSZ_htovjy7NMzj2OSEywHGw-i1lXr8_uobzC4KE");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl relative bottom-[620px]"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuk75RVYKCZ-rFxhOl2vBjivM6dSDeCtQkHHuZ7byJcnPliXL8p7gzi3bON7vDgXNhMgivcmfBxC0cMi5kKwy2X-cDGJJBGONIVLRBv2DcSggorJELvOzFXwsGE59poXbKCrr6LF-ZfM_DdpQWVPrZaJ4uirjdJ4KSWetlk7cSkZl7PPDBDW8l92LIBzpt6TGh563LcfpfpwfzRrNeN4momzANB85xsYNVi_McNIU6ZwklNAk1SxuTeIwJA-vtaM7wX45Kg_5Vc-E");'
+                ></div>
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
-<section>
-<div class="box"><P style="line-height: 45px;" class="para">PRESS START
-</P>
-<div ><p class="hid player1">Greetings developers,</p>
-<p class="hid player2">I am Immortal!</p>
-<p class="hid player3">An aspiring software developer</p>
-<p class="hid player4">The final level: game design</p></div>
-
-</section>
-
-
-</body>
+  </body>
 </html>
+
